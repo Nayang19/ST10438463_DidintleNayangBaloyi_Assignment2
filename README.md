@@ -10,3 +10,5 @@ step 5: design the game in the activity main 2
 step 6: code out the game in main activity 2 
 step 7: run the app 
 step 8: commit to GitHub
+----------------------------------------------
+https://youtu.be/AmheXlmLFpY
