@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ST10438463_DidintleNayangBaloyiA2</string>
+    <string name="getStartedButton">Get Started</string>
+    <string name="textView1">Welcome to Daisy</string>
+    <string name="textView2">Your Tamagotchi App</string>
+    <string name="feedButton">Feed</string>
+    <string name="cleanButton">Clean</string>
+    <string name="playButton">Play</string>
+    <string name="feedCount">Hunger</string>
+    <string name="cleanCount">Clean</string>
+    <string name="playCount">Happy</string>
+    <string name="feedClickCount"></string>
+    <string name="playClickCount"></string>
+    <string name="cleanClickCount"></string>
+
+
+</resources>

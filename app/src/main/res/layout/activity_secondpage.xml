@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66BC63"
+    tools:context=".Secondpage" >
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="20dp"
+        android:text="Feed"
+        android:textSize="20sp"
+        android:layout_below="@id/feedClickCount"
+        android:onClick="onFeedButtonClick"
+        app:layout_constraintBottom_toTopOf="@+id/feedCount"
+        app:layout_constraintEnd_toStartOf="@+id/cleanButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean"
+        android:onClick="onCleanButtonClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedCount"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintStart_toEndOf="@+id/feedButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="onPlayButtonClick"
+        android:text="Play"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cleanButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="288dp"
+        android:text="Hunger"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedButton" />
+
+    <TextView
+        android:id="@+id/cleanCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="304dp"
+        android:text="Clean"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedCount" />
+
+    <TextView
+        android:id="@+id/playCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Happy"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cleanCount" />
+
+    <TextView
+        android:id="@+id/feedClickCount"
+        android:layout_width="138dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="65dp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/feedCount"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/cleanClickCount"
+        android:layout_width="143dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="54dp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/cleanCount"
+        app:layout_constraintTop_toBottomOf="@+id/feedClickCount" />
+
+    <TextView
+        android:id="@+id/playClickCount"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="64dp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/playCount"
+        app:layout_constraintTop_toBottomOf="@+id/cleanClickCount" />
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="277dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/cleanButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dog_bathing_picture_imad"
+        tools:srcCompat="@drawable/dog_bathing_picture_imad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
